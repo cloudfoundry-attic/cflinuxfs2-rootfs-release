@@ -1,0 +1,12 @@
+---
+name: smoke-test
+
+templates:
+  run.erb: bin/run
+  trusted_ca.crt.erb: config/certs/trusted_ca.crt
+
+packages:
+
+properties:
+  rootfs_cflinuxfs2.trusted_certs:
+    description: "certficates to add to the rootfs trust store"

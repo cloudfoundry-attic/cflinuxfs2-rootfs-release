@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+set -ex
+
+CERTS_DIR=/var/vcap/packages/cflinuxfs2/rootfs/usr/local/share/ca-certificates/
+CERTS=/var/vcap/jobs/smoke-test/config/certs/trusted_ca.crt
+CERTS_COUNT=`grep "END CERTIFICATE" $CERTS | wc -l`
+FILE_COUNT=`find $CERTS_DIR -type f | wc -l`
+[ $FILE_COUNT -eq $CERTS_COUNT ]
