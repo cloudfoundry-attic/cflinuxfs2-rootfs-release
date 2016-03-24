@@ -1,0 +1,52 @@
+---
+director_uuid: ""
+
+name: (( "rootfs-smoke-test" ))
+
+releases:
+- name: cflinuxfs2-rootfs
+  version: latest
+
+networks:
+- name: rootfs-smoke-test
+  type: manual
+  subnets: (( iaas_settings.subnet_configs.rootfs-smoke-test.subnets ))
+
+resource_pools:
+- name: errand
+  network: rootfs-smoke-test
+  stemcell: (( iaas_settings.stemcell ))
+  cloud_properties: (( iaas_settings.resource_pool_cloud_properties.errand.cloud_properties ))
+
+compilation:
+  network: rootfs-smoke-test
+  reuse_compilation_vms: true
+  workers: 1
+  cloud_properties: (( iaas_settings.compilation_cloud_properties ))
+
+update:
+  canaries: 1
+  max_in_flight: 1
+  canary_watch_time: 5000-120000
+  update_watch_time: 5000-120000
+
+jobs:
+- name: rootfs-smoke-test
+  templates:
+  - name: smoke-test
+    release: cflinuxfs2-rootfs
+  - name: rootfs_cflinuxfs2
+    release: cflinuxfs2-rootfs
+  lifecycle: errand
+  instances: 1
+  networks:
+  - name: rootfs-smoke-test
+  resource_pool: errand
+
+property_overrides: (( merge ))
+
+properties:
+  rootfs_cflinuxfs2.trusted_certs: (( property_overrides.rootfs_cflinuxfs2.trusted_certs || nil ))
+
+# The keys below should not be included in the final stub
+iaas_settings: (( merge ))

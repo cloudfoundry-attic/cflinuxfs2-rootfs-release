@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+ROOTFS_RELEASE=$(dirname $0)/..
+DIEGO_RELEASE=$ROOTFS_RELEASE/../diego-release
+DIEGO_MANIFESTS_DIR=$DIEGO_RELEASE/manifest-generation
+ROOTFS_SMOKE_TEST_MANIFEST=${ROOTFS_RELEASE}/manifests/bosh-lite/rootfs-smoke-test.yml
+
+if [ ! -d $DIEGO_RELEASE ]; then
+    echo "Cannot find diego-release at $DIEGO_RELEASE"
+    exit 1
+fi
+
+DIRECTOR_UUID=`bosh status --uuid`
+
+mkdir -p `dirname ${ROOTFS_SMOKE_TEST_MANIFEST}`
+
+cp ${ROOTFS_RELEASE}/manifest-generation/rootfs-smoke-test.yml ${ROOTFS_SMOKE_TEST_MANIFEST}.tmp
+sed -i '.orig' "s/director_uuid: .*/director_uuid: ${DIRECTOR_UUID}/g" ${ROOTFS_SMOKE_TEST_MANIFEST}.tmp
+
+spiff merge \
+  ${ROOTFS_SMOKE_TEST_MANIFEST}.tmp \
+  ${ROOTFS_RELEASE}/manifest-generation/iaas-settings.yml \
+  ${DIEGO_MANIFESTS_DIR}/bosh-lite-stubs/iaas-settings.yml \
+  ${DIEGO_MANIFESTS_DIR}/bosh-lite-stubs/property-overrides.yml \
+  > ${ROOTFS_SMOKE_TEST_MANIFEST}
+
