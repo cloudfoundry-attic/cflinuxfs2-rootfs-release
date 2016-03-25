@@ -1,5 +1,5 @@
 ---
-name: rootfs_cflinuxfs2
+name: rootfs-setup
 
 templates:
   pre-start: bin/pre-start
@@ -9,5 +9,5 @@ packages:
   - cflinuxfs2
 
 properties:
-  rootfs_cflinuxfs2.trusted_certs:
+  rootfs.trusted_certs:
     description: "certficates to add to the rootfs trust store"
