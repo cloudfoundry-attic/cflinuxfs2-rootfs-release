@@ -1,5 +1,5 @@
 ---
-name: rootfs-setup
+name: cflinuxfs2-rootfs-setup
 
 templates:
   pre-start: bin/pre-start

@@ -1,5 +1,5 @@
 ---
-name: smoke-test
+name: cflinuxfs2-smoke-test
 
 templates:
   run.erb: bin/run

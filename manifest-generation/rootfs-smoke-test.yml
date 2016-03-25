@@ -33,9 +33,9 @@ update:
 jobs:
 - name: rootfs-smoke-test
   templates:
-  - name: smoke-test
+  - name: cflinuxfs2-smoke-test
     release: cflinuxfs2-rootfs
-  - name: rootfs-setup
+  - name: cflinuxfs2-rootfs-setup
     release: cflinuxfs2-rootfs
   lifecycle: errand
   instances: 1
