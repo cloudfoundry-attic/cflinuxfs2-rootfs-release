@@ -9,5 +9,5 @@ packages:
   - cflinuxfs2
 
 properties:
-  rootfs.trusted_certs:
+  cflinuxfs2-rootfs.trusted_certs:
     description: "certficates to add to the rootfs trust store"

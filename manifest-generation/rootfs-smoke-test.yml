@@ -31,7 +31,7 @@ update:
   update_watch_time: 5000-120000
 
 jobs:
-- name: rootfs-smoke-test
+- name: cflinuxfs2-smoke-test
   templates:
   - name: cflinuxfs2-smoke-test
     release: cflinuxfs2-rootfs
@@ -46,8 +46,8 @@ jobs:
 property_overrides: (( merge ))
 
 properties:
-  rootfs:
-    trusted_certs: (( property_overrides.rootfs.trusted_certs || nil ))
+  cflinuxfs2-rootfs:
+    trusted_certs: (( property_overrides.cflinuxfs2-rootfs.trusted_certs || nil ))
 
 # The keys below should not be included in the final stub
 iaas_settings: (( merge ))
