@@ -35,7 +35,7 @@ jobs:
   templates:
   - name: smoke-test
     release: cflinuxfs2-rootfs
-  - name: rootfs_cflinuxfs2
+  - name: rootfs-setup
     release: cflinuxfs2-rootfs
   lifecycle: errand
   instances: 1
@@ -46,7 +46,7 @@ jobs:
 property_overrides: (( merge ))
 
 properties:
-  rootfs_cflinuxfs2.trusted_certs: (( property_overrides.rootfs_cflinuxfs2.trusted_certs || nil ))
+  rootfs.trusted_certs: (( property_overrides.rootfs.trusted_certs || nil ))
 
 # The keys below should not be included in the final stub
 iaas_settings: (( merge ))
