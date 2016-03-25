@@ -8,5 +8,5 @@ templates:
 packages:
 
 properties:
-  rootfs_cflinuxfs2.trusted_certs:
+  rootfs.trusted_certs:
     description: "certficates to add to the rootfs trust store"

@@ -46,7 +46,8 @@ jobs:
 property_overrides: (( merge ))
 
 properties:
-  rootfs.trusted_certs: (( property_overrides.rootfs.trusted_certs || nil ))
+  rootfs:
+    trusted_certs: (( property_overrides.rootfs.trusted_certs || nil ))
 
 # The keys below should not be included in the final stub
 iaas_settings: (( merge ))
