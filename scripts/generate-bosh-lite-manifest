@@ -15,7 +15,7 @@ DIRECTOR_UUID=`bosh status --uuid`
 mkdir -p `dirname ${ROOTFS_SMOKE_TEST_MANIFEST}`
 
 cp ${ROOTFS_RELEASE}/manifest-generation/rootfs-smoke-test.yml ${ROOTFS_SMOKE_TEST_MANIFEST}.tmp
-sed -i '.orig' "s/director_uuid: .*/director_uuid: ${DIRECTOR_UUID}/g" ${ROOTFS_SMOKE_TEST_MANIFEST}.tmp
+sed -i'.orig' "s/director_uuid: .*/director_uuid: ${DIRECTOR_UUID}/g" ${ROOTFS_SMOKE_TEST_MANIFEST}.tmp
 
 spiff merge \
   ${ROOTFS_SMOKE_TEST_MANIFEST}.tmp \
