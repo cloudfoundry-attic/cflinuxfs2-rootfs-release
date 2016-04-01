@@ -55,6 +55,7 @@ located at `../diego-release`.
 
 1. Adding the trusted cert to `../diego-release/manifest-generation/bosh-lite-stubs/property-overrides.yml`:
 
+```
       property_overrides:
         cflinuxfs2-rootfs:
           trusted_certs: |
@@ -87,6 +88,7 @@ located at `../diego-release`.
             r5EejEQP82achV3em5+macfNfEIILruStanw9D+kR1GYlE07wMTTmkZ39x3HMicf
             r4ERoMvnaSaiGVHIiCi9ZsoNLlf6TBNNfaqpc8jDZa2/o/nM+Q==
             -----END CERTIFICATE-----
+```
 
 2. Run `scripts/generate-bosh-lite-manifest` to generate a bosh-lite deployment
    manifest for the smoke test.
