@@ -1,7 +1,7 @@
 ---
-director_uuid: ""
+director_uuid: (( merge ))
 
-name: (( "rootfs-smoke-test" ))
+name: rootfs-smoke-test
 
 releases:
 - name: cflinuxfs2-rootfs
@@ -43,11 +43,10 @@ jobs:
   - name: rootfs-smoke-test
   resource_pool: errand
 
-property_overrides: (( merge ))
-
 properties:
   cflinuxfs2-rootfs:
     trusted_certs: (( property_overrides.cflinuxfs2-rootfs.trusted_certs || nil ))
 
 # The keys below should not be included in the final stub
 iaas_settings: (( merge ))
+property_overrides: (( merge ))
