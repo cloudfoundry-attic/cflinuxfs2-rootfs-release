@@ -7,7 +7,7 @@ ROOTFS_DIR=$ROOTFS_PACKAGE/rootfs
 
 if [ ! -d $ROOTFS_DIR ]; then
   mkdir -p $ROOTFS_DIR
-  tar -pzxf $ROOTFS_PACKAGE/cflinuxfs2-*.tar.gz -C $ROOTFS_DIR
+  tar -pzxf $ROOTFS_PACKAGE/cflinuxfs2.tar.gz -C $ROOTFS_DIR
 fi
 
 rm -f $ROOTFS_DIR/usr/local/share/ca-certificates/*
