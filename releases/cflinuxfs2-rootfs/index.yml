@@ -2,6 +2,4 @@
 builds:
   9409cdad-a2bb-4a0f-8c0b-db9c608905ca:
     version: 0.1.0-rc.4
-  f5d900ac-4c3e-4ace-9524-e0239170db77:
-    version: 0.1.0
 format-version: '2'
