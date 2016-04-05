@@ -1,7 +1,5 @@
 ---
 builds:
-  9409cdad-a2bb-4a0f-8c0b-db9c608905ca:
-    version: 0.1.0-rc.4
   edb22033-eb7f-495a-bdc8-9675cf554604:
     version: 0.1.0
 format-version: '2'
