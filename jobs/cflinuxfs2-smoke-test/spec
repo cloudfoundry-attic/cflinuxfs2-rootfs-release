@@ -5,8 +5,6 @@ templates:
   run.erb: bin/run
   trusted_ca.crt.erb: config/certs/trusted_ca.crt
 
-packages:
-
 properties:
   cflinuxfs2-rootfs.trusted_certs:
     description: "certficates to add to the rootfs trust store"
