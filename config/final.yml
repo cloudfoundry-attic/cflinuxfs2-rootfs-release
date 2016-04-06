@@ -1,6 +1,0 @@
----
-final_name: cflinuxfs2-rootfs
-blobstore:
-  provider: s3
-  options:
-    bucket_name: rootfs
