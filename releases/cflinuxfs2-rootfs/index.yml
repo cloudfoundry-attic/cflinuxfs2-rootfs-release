@@ -12,4 +12,6 @@ builds:
     version: 1.3.0
   be418b3a-adcd-4b74-bec1-c41cdb5cf6ec:
     version: 1.4.0
+  a021e55e-52c6-4b1f-ab5a-2c766da11c49:
+    version: 1.5.0
 format-version: '2'
