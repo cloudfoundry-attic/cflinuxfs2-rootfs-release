@@ -20,4 +20,6 @@ builds:
     version: 1.7.0
   aa7c5d7d-971e-431a-aca2-a247906b88f5:
     version: 1.8.0
+  5ad43f16-ef2c-4663-91eb-c2618d840dec:
+    version: 1.9.0
 format-version: '2'
