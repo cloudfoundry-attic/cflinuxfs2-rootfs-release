@@ -34,4 +34,6 @@ builds:
     version: 1.14.0
   30457a0d-75cd-4ca9-9ba8-c84323a067f9:
     version: 1.15.0
+  3dbd8bde-6788-4c1b-8219-58c4a094d4de:
+    version: 1.16.0
 format-version: '2'
