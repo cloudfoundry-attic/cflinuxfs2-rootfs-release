@@ -44,4 +44,6 @@ builds:
     version: 1.19.0
   ca4b3b4a-3b85-4736-be0d-d7f218b730e6:
     version: 1.20.0
+  9fca549b-7c6a-43af-9ed4-158e517b5ad0:
+    version: 1.21.0
 format-version: '2'
