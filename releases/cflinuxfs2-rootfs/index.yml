@@ -48,4 +48,6 @@ builds:
     version: 1.21.0
   259dbdbe-ff61-4370-8dec-7c6f89850a60:
     version: 1.22.0
+  1ca13626-a020-4b90-9da1-345bf0d2bbfb:
+    version: 1.23.0
 format-version: '2'
