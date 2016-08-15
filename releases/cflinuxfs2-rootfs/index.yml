@@ -50,4 +50,6 @@ builds:
     version: 1.22.0
   1ca13626-a020-4b90-9da1-345bf0d2bbfb:
     version: 1.23.0
+  9c7930ee-be71-44fd-ac49-cfe87e777996:
+    version: 1.24.0
 format-version: '2'
