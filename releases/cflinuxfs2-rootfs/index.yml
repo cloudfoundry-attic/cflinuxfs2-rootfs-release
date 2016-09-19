@@ -62,4 +62,6 @@ builds:
     version: 1.28.0
   c651aee8-decd-4c23-a416-d031d6e74497:
     version: 1.29.0
+  0a9ca35f-1f89-4202-9c65-96f08c1bb6a9:
+    version: 1.30.0
 format-version: '2'
