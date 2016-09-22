@@ -64,4 +64,6 @@ builds:
     version: 1.29.0
   0a9ca35f-1f89-4202-9c65-96f08c1bb6a9:
     version: 1.30.0
+  998d0787-19f1-4fac-b5cd-23f4f7dd9e4e:
+    version: 1.31.0
 format-version: '2'
