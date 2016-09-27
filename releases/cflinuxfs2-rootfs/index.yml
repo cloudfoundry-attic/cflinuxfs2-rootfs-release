@@ -70,4 +70,6 @@ builds:
     version: 1.32.0
   14ef4107-7e25-49d5-9d20-e3c37c5228aa:
     version: 1.33.0
+  ecd621cb-b5fc-4bff-8ac8-a7e106112e57:
+    version: 1.34.0
 format-version: '2'
