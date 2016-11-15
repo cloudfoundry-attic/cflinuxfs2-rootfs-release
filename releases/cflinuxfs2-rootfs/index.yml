@@ -82,4 +82,6 @@ builds:
     version: 1.38.0
   e02b57b4-e6d0-42b7-bb99-5b439ff8e3bf:
     version: 1.39.0
+  f5b807cc-64e7-41dc-a3df-3d1c83158f97:
+    version: 1.40.0
 format-version: '2'
