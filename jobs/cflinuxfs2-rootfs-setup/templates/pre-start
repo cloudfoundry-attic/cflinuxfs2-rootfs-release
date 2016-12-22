@@ -4,6 +4,7 @@
 CONF_DIR=/var/vcap/jobs/cflinuxfs2-rootfs-setup/config
 ROOTFS_PACKAGE=/var/vcap/packages/cflinuxfs2
 ROOTFS_DIR=$ROOTFS_PACKAGE/rootfs
+ROOTFS_TAR=$ROOTFS_PACKAGE/rootfs.tar
 
 if [ ! -d $ROOTFS_DIR ]; then
   mkdir -p $ROOTFS_DIR
@@ -42,3 +43,4 @@ fi
 # change modification time to invalidate garden's image cache
 touch $ROOTFS_DIR
 
+tar -C $ROOTFS_DIR -cf $ROOTFS_TAR .
