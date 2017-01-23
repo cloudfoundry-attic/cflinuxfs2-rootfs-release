@@ -94,4 +94,6 @@ builds:
     version: 1.44.0
   33e4c963-046b-40b5-a0b2-b92f1b9563ca:
     version: 1.45.0
+  1d91b331-c0e2-4cd1-9b50-9ecf3b4a49dc:
+    version: 1.46.0
 format-version: '2'
