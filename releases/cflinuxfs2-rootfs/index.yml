@@ -104,4 +104,6 @@ builds:
     version: 1.49.0
   866f90ae-362e-4785-ac9d-a6d01e539264:
     version: 1.50.0
+  0faa77f5-8cbe-4d01-992c-61a28d31c7b4:
+    version: 1.51.0
 format-version: '2'
