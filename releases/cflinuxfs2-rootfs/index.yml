@@ -110,4 +110,6 @@ builds:
     version: 1.52.0
   bf93de3e-b17c-4707-b8b1-89f09cfb2341:
     version: 1.53.0
+  0709fdd9-be3a-4a29-b833-8e531cb497ff:
+    version: 1.54.0
 format-version: '2'
