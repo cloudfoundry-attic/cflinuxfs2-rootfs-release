@@ -118,4 +118,6 @@ builds:
     version: 1.56.0
   847ac9e9-206b-44a6-bea5-c421456bfff6:
     version: 1.57.0
+  c5977fac-a5f4-4ac3-abdb-8a1b415d8d45:
+    version: 1.58.0
 format-version: '2'
