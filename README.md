@@ -1,5 +1,7 @@
 ### cflinuxfs2 rootfs BOSH Release
 
+This repo is deprecated. Please use https://github.com/cloudfoundry/cflinuxfs2-release instead. 
+
 This bosh release contains the rootfs package as well as a job that will
 extract the package to `/var/vcap/packages/cflinuxfs2/rootfs`.
 
