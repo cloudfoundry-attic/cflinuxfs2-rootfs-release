@@ -140,4 +140,6 @@ builds:
     version: 1.118.0
   a64df59a-28c5-4c8f-9934-686f48738f95:
     version: 1.119.0
+  733c3243-1955-4396-8beb-8d805c84cbbf:
+    version: 1.120.0
 format-version: '2'
